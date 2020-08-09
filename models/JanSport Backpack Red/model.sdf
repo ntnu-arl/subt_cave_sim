@@ -1,0 +1,23 @@
+<?xml version='1.0' ?>
+<sdf version='1.6'>
+  <model name='JanSport Backpack Red'>
+    <static>true</static>
+    <link name='link'>
+      <collision name='collision'>
+        <geometry>
+          <mesh>
+            <uri>model://JanSport Backpack Red/meshes/backpack.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='visual'>
+        <geometry>
+          <mesh>
+            <uri>model://JanSport Backpack Red/meshes/backpack.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
+    
