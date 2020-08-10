@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>subt_cave_sim</name>
+  <version>0.0.0</version>
+  <description>Gazebo resources for cave environment</description>
+  <maintainer email="mihir.dharmadhikari@gmail.com">Mihir Dharmadhikari</maintainer>
+  <license>None</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>catkin_simple</buildtool_depend>
+  <depend>roscpp</depend>
+
+</package>

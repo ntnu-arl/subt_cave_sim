@@ -1,0 +1,25 @@
+<?xml version='1.0' ?>
+<sdf version='1.6'>
+  <model name='Samsung J8 Black'>
+    <pose>0 0 0 0 0 0</pose>
+    <static>true</static>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Samsung J8 Black/meshes/phone.dae</uri>
+         </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Samsung J8 Black/meshes/phone.dae</uri>
+         </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+ </sdf>
+
+    

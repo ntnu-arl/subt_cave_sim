@@ -1,0 +1,13 @@
+material Rope_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Rope_Albedo.png
+        }
+      }
+    }
+  }

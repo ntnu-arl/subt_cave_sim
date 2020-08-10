@@ -1,0 +1,13 @@
+material Vent_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Vent_Albedo.png
+      }
+    }
+  }
+}
