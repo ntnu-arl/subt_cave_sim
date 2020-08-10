@@ -1,4 +1,4 @@
 # subt_cave_sim
 
-This repository contains the models for the cave environment published by DARPA for the DARPA Subterranean Challenge - Cave Circuit.
-These models can be used to test the exploration planenrs like [Graph-Based exploration planner](https://github.com/unr-arl/gbplanner_ros) or the [Motion-Primitives based exploration planner](https://github.com/unr-arl/mbplanner_ros).
+This repository contains simulated cave environments published by DARPA for the DARPA Subterranean Challenge - Cave Circuit.
+These models can be used to test the exploration planners like [Graph-based Exploration Planner](https://github.com/unr-arl/gbplanner_ros) or the [Motion Primitives-based Exploration Planner](https://github.com/unr-arl/mbplanner_ros).
