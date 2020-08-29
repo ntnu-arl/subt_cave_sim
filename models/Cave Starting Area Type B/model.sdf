@@ -1,0 +1,213 @@
+<sdf version="1.6">
+  <model name="Cave Starting Area Type B">
+    <static>true</static>
+    <link name="fence_link">
+      <pose>-12 0 0 0 0 0</pose>
+      <collision name="collision_top">
+        <pose>0 0 30 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>55 60 0.2</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name="collision_left">
+        <pose>0 30 15 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>55 0.2 30</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name="collision_right">
+        <pose>0 -30 15 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>55 0.2 30</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name="collision_back">
+        <pose>-27.5 0 15 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.2 60 30</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="base_link">
+      <pose>0 0 0 0 0 1.5708</pose>
+      <collision name="collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://Cave Starting Area Type B/meshes/cavestartingarea.dae</uri>
+            <scale>1.0 1.0 1.0</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="Grass_visual">
+        <geometry>
+          <mesh>
+            <uri>model://Cave Starting Area Type B/meshes/cavestartingarea.dae</uri>
+            <submesh>
+              <name>Grass</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://Cave Starting Area Type B/materials/textures/Grass_Albedo.jpg</albedo_map>
+              <normal_map>model://Cave Starting Area Type B/materials/textures/Grass_Normal.jpg</normal_map>
+              <roughness_map>model://Cave Starting Area Type B/materials/textures/Grass_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+          
+          <script>
+            <uri>model://Cave Starting Area Type B/materials/scripts/</uri>
+            <uri>model://Cave Starting Area Type B/materials/textures/</uri>
+            <name>CaveTile/Grass_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name="StriatedRock_visual">
+        <geometry>
+          <mesh>
+            <uri>model://Cave Starting Area Type B/meshes/cavestartingarea.dae</uri>
+            <submesh>
+              <name>StriatedRock</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://Cave Starting Area Type B/materials/textures/StriatedRock_Albedo.png</albedo_map>
+              <normal_map>model://Cave Starting Area Type B/materials/textures/StriatedRock_Normal.png</normal_map>
+              <roughness_map>model://Cave Starting Area Type B/materials/textures/StriatedRock_Roughness.png</roughness_map>
+            </metal>
+          </pbr>
+          
+          <script>
+            <uri>model://Cave Starting Area Type B/materials/scripts/</uri>
+            <uri>model://Cave Starting Area Type B/materials/textures/</uri>
+            <name>CaveTile/StriatedRock_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name="RockPile_visual">
+        <geometry>
+          <mesh>
+            <uri>model://Cave Starting Area Type B/meshes/cavestartingarea.dae</uri>
+            <submesh>
+              <name>RockPile</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://Cave Starting Area Type B/materials/textures/RockPile_Albedo.png</albedo_map>
+              <normal_map>model://Cave Starting Area Type B/materials/textures/RockPile_Normal.png</normal_map>
+              <roughness_map>model://Cave Starting Area Type B/materials/textures/RockPile_Roughness.png</roughness_map>
+            </metal>
+          </pbr>
+          
+          <script>
+            <uri>model://Cave Starting Area Type B/materials/scripts/</uri>
+            <uri>model://Cave Starting Area Type B/materials/textures/</uri>
+            <name>CaveTile/RockPile_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name="CaveWall_visual">
+        <geometry>
+          <mesh>
+            <uri>model://Cave Starting Area Type B/meshes/cavestartingarea.dae</uri>
+            <submesh>
+              <name>CaveWall</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://Cave Starting Area Type B/materials/textures/CaveWall_Albedo.png</albedo_map>
+              <normal_map>model://Cave Starting Area Type B/materials/textures/CaveWall_Normal.png</normal_map>
+              <roughness_map>model://Cave Starting Area Type B/materials/textures/CaveWall_Roughness.png</roughness_map>
+            </metal>
+          </pbr>
+          
+          <script>
+            <uri>model://Cave Starting Area Type B/materials/scripts/</uri>
+            <uri>model://Cave Starting Area Type B/materials/textures/</uri>
+            <name>CaveTile/CaveWall_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <link name="lights">
+      <light name="spot_light1" type="spot">
+        <pose>-8 0.0 18.0 0 0.0 0</pose>
+        <diffuse>0 0 0 1</diffuse>
+        <specular>0 0 0 1</specular>
+        <attenuation>
+          <range>30</range>
+          <linear>0.0</linear>
+          <constant>0.01</constant>
+          <quadratic>0.001</quadratic>
+        </attenuation>
+        <spot>
+          <inner_angle>2.0</inner_angle>
+          <outer_angle>2.9</outer_angle>
+          <falloff>0.4</falloff>
+        </spot>
+        <cast_shadows>false</cast_shadows>
+      </light>
+      <light name="spot_light2" type="spot">
+        <pose>0 0.0 15.0 0 0 0</pose>
+        <diffuse>0 0 0 1</diffuse>
+        <specular>0 0 0 1</specular>
+        <attenuation>
+          <range>20</range>
+          <linear>0.0</linear>
+          <constant>0.01</constant>
+          <quadratic>0.001</quadratic>
+        </attenuation>
+        <spot>
+          <inner_angle>1.5</inner_angle>
+          <outer_angle>1.8</outer_angle>
+          <falloff>0.52</falloff>
+        </spot>
+        <cast_shadows>false</cast_shadows>
+      </light>
+    </link>
+
+	 
+        <!-- <plugin filename="libignition-gazebo-performer-detector-system.so" name="ignition::gazebo::systems::PerformerDetector">
+            <topic>/subt_performer_detector</topic>
+            <pose>-13.75 0 15 0 0 0</pose>
+            <geometry>
+                <box>
+                    <size>51.5 60 30</size>
+                </box>
+            </geometry>
+        </plugin> -->
+
+  </model>
+</sdf>

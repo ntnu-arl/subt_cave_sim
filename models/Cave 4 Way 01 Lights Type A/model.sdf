@@ -1,0 +1,43 @@
+<sdf version="1.6">
+  <model name="Cave 4 Way 01 Lights Type A">
+    <static>true</static>
+    <include>
+      <name>cave_4way_01_type_a</name>
+      <uri>model://Cave 4 Way 01 Type A</uri>
+    </include>
+    <link name="lights">
+      <light name="Omni012" type="spot">
+        <pose>5.76187 0.0888174 5.11374 0 0 0</pose>
+        <attenuation>
+          <range>20</range>
+          <linear>0.2</linear>
+          <constant>1.0</constant>
+          <quadratic>0.01</quadratic>
+        </attenuation>
+        <spot>
+          <inner_angle>2.0</inner_angle>
+          <outer_angle>3.1</outer_angle>
+          <falloff>1.2</falloff>
+        </spot>
+        <cast_shadows>false</cast_shadows>
+      </light>
+      <light name="Omni013" type="spot">
+        <pose>-11.574 -3.89308 6.40369 0 0 0</pose>
+        <diffuse>0 0 0 1</diffuse>
+        <specular>0 0 0 1</specular>
+        <attenuation>
+          <range>20</range>
+          <linear>0.2</linear>
+          <constant>1.0</constant>
+          <quadratic>0.01</quadratic>
+        </attenuation>
+        <spot>
+          <inner_angle>2.0</inner_angle>
+          <outer_angle>3.1</outer_angle>
+          <falloff>1.2</falloff>
+        </spot>
+        <cast_shadows>false</cast_shadows>
+      </light>
+    </link>
+  </model>
+</sdf>

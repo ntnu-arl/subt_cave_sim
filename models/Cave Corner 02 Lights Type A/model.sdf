@@ -1,0 +1,45 @@
+<sdf version="1.6">
+  <model name="Cave Corner 02 Lights Type A">
+    <include>
+      <name>cave_corner_02_type_a</name>
+      <uri>model://Cave Corner 02 Type A</uri>
+    </include>
+    <static>true</static>
+    <link name="lights">
+      <light name="Omni009" type="spot">
+        <pose>5.8147 -29.1165 5.08124 0 0 0</pose>
+        <diffuse>0 0 0 1</diffuse>
+        <specular>0 0 0 1</specular>
+        <attenuation>
+          <range>20</range>
+          <linear>0.2</linear>
+          <constant>1.0</constant>
+          <quadratic>0.01</quadratic>
+        </attenuation>
+        <spot>
+          <inner_angle>2.0</inner_angle>
+          <outer_angle>3.1</outer_angle>
+          <falloff>1.2</falloff>
+        </spot>
+        <cast_shadows>false</cast_shadows>
+      </light>
+      <light name="Omni010" type="spot">
+        <pose>-1.05491 3.24461 2.89552 0 0 0</pose>
+        <diffuse>0 0 0 1</diffuse>
+        <specular>0 0 0 1</specular>
+        <attenuation>
+          <range>20</range>
+          <linear>0.2</linear>
+          <constant>1.0</constant>
+          <quadratic>0.01</quadratic>
+        </attenuation>
+        <spot>
+          <inner_angle>2.0</inner_angle>
+          <outer_angle>3.1</outer_angle>
+          <falloff>1.2</falloff>
+        </spot>
+        <cast_shadows>false</cast_shadows>
+      </light>
+    </link>
+  </model>
+</sdf>
