@@ -1,0 +1,41 @@
+<sdf version="1.6">
+  <model name="cave_corner_30F">
+    <static>true</static>
+    <link name="base_link">
+    <collision name="collision">
+      <pose>0 0 0 0 0 0</pose>
+      <geometry>
+        <mesh>
+          <uri>model://cave_corner_30F/meshes/corner30degflipped.dae</uri>
+          <scale>1.0 1.0 1.0</scale>
+        </mesh>
+      </geometry>
+    </collision>
+    <visual name="CaveWall_visual">
+      <geometry>
+        <mesh>
+          <uri>model://cave_corner_30F/meshes/corner30degflipped.dae</uri>
+          <scale>1.0 1.0 1.0</scale>
+        </mesh>
+      </geometry>
+      <material>
+        <diffuse>0 0 0 1</diffuse>
+        <specular>0 0 0 1</specular>
+        <pbr>
+          <metal>
+            <albedo_map>model://cave_corner_30F/materials/textures/CaveWall_Albedo.png</albedo_map>
+            <normal_map>model://cave_corner_30F/materials/textures/CaveWall_Normal.png</normal_map>
+            <roughness_map>model://cave_corner_30F/materials/textures/CaveWall_Roughness.png</roughness_map>
+          </metal>
+        </pbr>
+        
+        <script>
+          <uri>model://cave_corner_30F/materials/scripts/</uri>
+          <uri>model://cave_corner_30F/materials/textures/</uri>
+          <name>CaveTile/CaveWall_Diffuse</name>
+        </script>
+      </material>
+    </visual>
+    </link>
+  </model>
+</sdf>

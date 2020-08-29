@@ -1,0 +1,14 @@
+
+material CaveTile/CaveWall_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture CaveWall_Albedo.png
+        }
+      }
+    }
+  }

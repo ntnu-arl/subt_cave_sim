@@ -1,0 +1,62 @@
+<sdf version="1.6">
+  <model name="cave_elevation_straight_01_lights_type_a">
+    <include>
+      <name>cave_elevation_straight_01_type_a</name>
+      <uri>model://Cave Elevation Straight Type A</uri>
+    </include>
+    <static>true</static>
+    <link name="lights">
+      <light name="Omni014" type="spot">
+        <pose>2.53634 3.74647 19.3467 0 0 0</pose>
+        <diffuse>0 0 0 1</diffuse>
+        <specular>0 0 0 1</specular>
+        <attenuation>
+          <range>20</range>
+          <linear>0.2</linear>
+          <constant>1.0</constant>
+          <quadratic>0.01</quadratic>
+        </attenuation>
+        <spot>
+          <inner_angle>2.0</inner_angle>
+          <outer_angle>3.1</outer_angle>
+          <falloff>1.2</falloff>
+        </spot>
+        <cast_shadows>false</cast_shadows>
+      </light>
+      <light name="Omni015" type="spot">
+        <pose>0.375027 34.0401 25.5103 0 0 0</pose>
+        <diffuse>0 0 0 1</diffuse>
+        <specular>0 0 0 1</specular>
+        <attenuation>
+          <range>20</range>
+          <linear>0.2</linear>
+          <constant>1.0</constant>
+          <quadratic>0.01</quadratic>
+        </attenuation>
+        <spot>
+          <inner_angle>2.0</inner_angle>
+          <outer_angle>3.1</outer_angle>
+          <falloff>1.2</falloff>
+        </spot>
+        <cast_shadows>false</cast_shadows>
+      </light>
+      <light name="Omni016" type="spot">
+        <pose>1.47727 -30.5158 7.11288 0 0 0</pose>
+        <diffuse>0 0 0 1</diffuse>
+        <specular>0 0 0 1</specular>
+        <attenuation>
+          <range>20</range>
+          <linear>0.2</linear>
+          <constant>1.0</constant>
+          <quadratic>0.01</quadratic>
+        </attenuation>
+        <spot>
+          <inner_angle>2.0</inner_angle>
+          <outer_angle>3.1</outer_angle>
+          <falloff>1.2</falloff>
+        </spot>
+        <cast_shadows>false</cast_shadows>
+      </light>
+    </link>
+  </model>
+</sdf>

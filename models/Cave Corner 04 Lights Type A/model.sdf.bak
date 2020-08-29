@@ -1,0 +1,62 @@
+<sdf version="1.6">
+  <model name="cave_corner_04_lights_type_a">
+    <include>
+      <name>cave_corner_04_type_a</name>
+      <uri>model://Cave Corner 04 Type A</uri>
+    </include>
+    <static>true</static>
+    <link name="lights">
+      <light name="Omni006" type="spot">
+        <pose>20.7742 25.7975 26.2202 0 0 0</pose>
+        <diffuse>0 0 0 1</diffuse>
+        <specular>0 0 0 1</specular>
+        <attenuation>
+          <range>20</range>
+          <linear>0.2</linear>
+          <constant>1.0</constant>
+          <quadratic>0.01</quadratic>
+        </attenuation>
+        <spot>
+          <inner_angle>2.0</inner_angle>
+          <outer_angle>3.1</outer_angle>
+          <falloff>1.2</falloff>
+        </spot>
+        <cast_shadows>false</cast_shadows>
+      </light>
+      <light name="Omni007" type="spot">
+        <pose>27.0512 -26.3175 18.2794 0 0 0</pose>
+        <diffuse>0 0 0 1</diffuse>
+        <specular>0 0 0 1</specular>
+        <attenuation>
+          <range>20</range>
+          <linear>0.2</linear>
+          <constant>1.0</constant>
+          <quadratic>0.01</quadratic>
+        </attenuation>
+        <spot>
+          <inner_angle>2.0</inner_angle>
+          <outer_angle>3.1</outer_angle>
+          <falloff>1.2</falloff>
+        </spot>
+        <cast_shadows>false</cast_shadows>
+      </light>
+      <light name="Omni008" type="spot">
+        <pose>-35.8221 -50.7214 5.80704 0 0 0</pose>
+        <diffuse>0 0 0 1</diffuse>
+        <specular>0 0 0 1</specular>
+        <attenuation>
+          <range>20</range>
+          <linear>0.2</linear>
+          <constant>1.0</constant>
+          <quadratic>0.01</quadratic>
+        </attenuation>
+        <spot>
+          <inner_angle>2.0</inner_angle>
+          <outer_angle>3.1</outer_angle>
+          <falloff>1.2</falloff>
+        </spot>
+        <cast_shadows>false</cast_shadows>
+      </light>
+    </link>
+  </model>
+</sdf>

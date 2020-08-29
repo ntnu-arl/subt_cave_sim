@@ -1,0 +1,143 @@
+<sdf version="1.6">
+  <model name="Cave 3 Way 01 Type A">
+    <static>true</static>
+    <link name="base_link">
+      <collision name="collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://Cave 3 Way 01 Type A/meshes/3way01.dae</uri>
+            <scale>1.0 1.0 1.0</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="Gravel_visual">
+        <geometry>
+          <mesh>
+            <uri>model://Cave 3 Way 01 Type A/meshes/3way01.dae</uri>
+            <submesh>
+              <name>Gravel</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://Cave 3 Way 01 Type A/materials/textures/Gravel_Albedo.png</albedo_map>
+              <normal_map>model://Cave 3 Way 01 Type A/materials/textures/Gravel_Normal.png</normal_map>
+              <roughness_map>model://Cave 3 Way 01 Type A/materials/textures/Gravel_Roughness.png</roughness_map>
+            </metal>
+          </pbr>
+          
+          <script>
+            <uri>model://Cave 3 Way 01 Type A/materials/scripts/</uri>
+            <uri>model://Cave 3 Way 01 Type A/materials/textures/</uri>
+            <name>CaveTile/Gravel_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name="StriatedRock_visual">
+        <geometry>
+          <mesh>
+            <uri>model://Cave 3 Way 01 Type A/meshes/3way01.dae</uri>
+            <submesh>
+              <name>StriatedRock</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://Cave 3 Way 01 Type A/materials/textures/StriatedRock_Albedo.png</albedo_map>
+              <normal_map>model://Cave 3 Way 01 Type A/materials/textures/StriatedRock_Normal.png</normal_map>
+              <roughness_map>model://Cave 3 Way 01 Type A/materials/textures/StriatedRock_Roughness.png</roughness_map>
+            </metal>
+          </pbr>
+          
+          <script>
+            <uri>model://Cave 3 Way 01 Type A/materials/scripts/</uri>
+            <uri>model://Cave 3 Way 01 Type A/materials/textures/</uri>
+            <name>CaveTile/StriatedRock_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name="RockPile_visual">
+        <geometry>
+          <mesh>
+            <uri>model://Cave 3 Way 01 Type A/meshes/3way01.dae</uri>
+            <submesh>
+              <name>RockPile</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://Cave 3 Way 01 Type A/materials/textures/RockPile_Albedo.png</albedo_map>
+              <normal_map>model://Cave 3 Way 01 Type A/materials/textures/RockPile_Normal.png</normal_map>
+              <roughness_map>model://Cave 3 Way 01 Type A/materials/textures/RockPile_Roughness.png</roughness_map>
+            </metal>
+          </pbr>
+          
+          <script>
+            <uri>model://Cave 3 Way 01 Type A/materials/scripts/</uri>
+            <uri>model://Cave 3 Way 01 Type A/materials/textures/</uri>
+            <name>CaveTile/RockPile_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name="CaveWall_visual">
+        <geometry>
+          <mesh>
+            <uri>model://Cave 3 Way 01 Type A/meshes/3way01.dae</uri>
+            <submesh>
+              <name>CaveWall</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://Cave 3 Way 01 Type A/materials/textures/CaveWall_Albedo.png</albedo_map>
+              <normal_map>model://Cave 3 Way 01 Type A/materials/textures/CaveWall_Normal.png</normal_map>
+              <roughness_map>model://Cave 3 Way 01 Type A/materials/textures/CaveWall_Roughness.png</roughness_map>
+            </metal>
+          </pbr>
+          
+          <script>
+            <uri>model://Cave 3 Way 01 Type A/materials/scripts/</uri>
+            <uri>model://Cave 3 Way 01 Type A/materials/textures/</uri>
+            <name>CaveTile/CaveWall_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+    
+    
+    <plugin filename="libignition-gazebo-performer-detector-system.so" name="ignition::gazebo::systems::PerformerDetector">
+      <topic>/subt_performer_detector</topic>
+      <pose>5 -12 5 0 0 0</pose>
+      <header_data>
+        <key>type</key>
+        <value>decision</value>
+      </header_data>
+      <geometry>
+        <box>
+          <size>20 20 15</size>
+        </box>
+      </geometry>
+    </plugin>
+  </model>
+</sdf>

@@ -1,0 +1,114 @@
+<sdf version="1.6">
+  <model name="Cave Vertical Shaft Type B">
+    <static>true</static>
+    <link name="base_link">
+      <collision name="collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://Cave Vertical Shaft Type B/meshes/caveverticalshaft.dae</uri>
+            <scale>1.0 1.0 1.0</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="StriatedRock_visual">
+        <geometry>
+          <mesh>
+            <uri>model://Cave Vertical Shaft Type B/meshes/caveverticalshaft.dae</uri>
+            <submesh>
+              <name>StriatedRock</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://Cave Vertical Shaft Type B/materials/textures/StriatedRock_Albedo.png</albedo_map>
+              <normal_map>model://Cave Vertical Shaft Type B/materials/textures/StriatedRock_Normal.png</normal_map>
+              <roughness_map>model://Cave Vertical Shaft Type B/materials/textures/StriatedRock_Roughness.png</roughness_map>
+            </metal>
+          </pbr>
+          
+          <script>
+            <uri>model://Cave Vertical Shaft Type B/materials/scripts/</uri>
+            <uri>model://Cave Vertical Shaft Type B/materials/textures/</uri>
+            <name>CaveTile/StriatedRock_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name="RockPile_visual">
+        <geometry>
+          <mesh>
+            <uri>model://Cave Vertical Shaft Type B/meshes/caveverticalshaft.dae</uri>
+            <submesh>
+              <name>RockPile</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://Cave Vertical Shaft Type B/materials/textures/RockPile_Albedo.png</albedo_map>
+              <normal_map>model://Cave Vertical Shaft Type B/materials/textures/RockPile_Normal.png</normal_map>
+              <roughness_map>model://Cave Vertical Shaft Type B/materials/textures/RockPile_Roughness.png</roughness_map>
+            </metal>
+          </pbr>
+          
+          <script>
+            <uri>model://Cave Vertical Shaft Type B/materials/scripts/</uri>
+            <uri>model://Cave Vertical Shaft Type B/materials/textures/</uri>
+            <name>CaveTile/RockPile_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name="CaveWall_visual">
+        <geometry>
+          <mesh>
+            <uri>model://Cave Vertical Shaft Type B/meshes/caveverticalshaft.dae</uri>
+            <submesh>
+              <name>CaveWall</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://Cave Vertical Shaft Type B/materials/textures/CaveWall_Albedo.png</albedo_map>
+              <normal_map>model://Cave Vertical Shaft Type B/materials/textures/CaveWall_Normal.png</normal_map>
+              <roughness_map>model://Cave Vertical Shaft Type B/materials/textures/CaveWall_Roughness.png</roughness_map>
+            </metal>
+          </pbr>
+          
+          <script>
+            <uri>model://Cave Vertical Shaft Type B/materials/scripts/</uri>
+            <uri>model://Cave Vertical Shaft Type B/materials/textures/</uri>
+            <name>CaveTile/CaveWall_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+    
+    <plugin filename="libignition-gazebo-performer-detector-system.so" name="ignition::gazebo::systems::PerformerDetector">
+      <header_data>
+        <key>type</key>
+        <value>vertical</value>
+      </header_data>
+      <topic>/subt_performer_detector</topic>
+      <pose>0.2 -0.2 16 0 0 0</pose>
+      <geometry>
+        <box>
+          <size>11.5 11.5 37</size>
+        </box>
+      </geometry>
+    </plugin>
+  </model>
+</sdf>
