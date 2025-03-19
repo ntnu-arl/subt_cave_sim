@@ -1,0 +1,24 @@
+model {
+  file: "model.sdf"
+  file_format {
+    version {
+      major: 1
+      minor: 6
+    }
+    name: "sdf"
+  }
+}
+name: "Urban Starting Area"
+description: "A starting area for urban circuit."
+authors {
+  name: "Ian Chen"
+  email: "chen@openrobotics.org"
+}
+authors {
+  name: "Cole Biesemeyer"
+  email: "cole@openrobotics.org"
+}
+dependencies {
+  uri: "https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform"
+}
+

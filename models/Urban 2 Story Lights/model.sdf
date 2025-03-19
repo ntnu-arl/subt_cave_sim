@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="urban_2story_lights">
+    <static>true</static>
+    <include>
+      <name>urban_2story</name>
+      <uri>model://Urban 2 Story</uri>
+      <!-- <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban 2 Story</uri> -->
+    </include>
+
+    <link name="light1">
+      <light type="spot" name="downstairs_1">
+        <pose>0 0 7.4 0 0 0</pose>
+        <diffuse>0.5 0.5 0.5 1</diffuse>
+        <specular>0.5 0.5 0.5 1</specular>
+        <direction>1 0 0</direction>
+        <attenuation>
+          <range>50</range>
+          <linear>0.1</linear>
+          <constant>1.0</constant>
+          <quadratic>0.01</quadratic>
+        </attenuation>
+        <spot>
+          <inner_angle>2.0</inner_angle>
+          <outer_angle>3.0</outer_angle>
+          <falloff>0.8</falloff>
+        </spot>
+        <cast_shadows>false</cast_shadows>
+      </light>
+      <light type="spot" name="upstairs_1">
+        <pose>7.2 -2.6 17.4 0 0 0</pose>
+        <diffuse>0.5 0.5 0.5 1</diffuse>
+        <specular>0.5 0.5 0.5 1</specular>
+        <direction>1 0 0</direction>
+        <attenuation>
+          <range>50</range>
+          <linear>0.1</linear>
+          <constant>1.0</constant>
+          <quadratic>0.01</quadratic>
+        </attenuation>
+        <spot>
+          <inner_angle>2.0</inner_angle>
+          <outer_angle>3.0</outer_angle>
+          <falloff>0.8</falloff>
+        </spot>
+        <cast_shadows>false</cast_shadows>
+      </light>
+      <light type="spot" name="upstairs_2">
+        <pose>0.0 10.7 17.4 0 0 0</pose>
+        <diffuse>0.5 0.5 0.5 1</diffuse>
+        <specular>0.5 0.5 0.5 1</specular>
+        <direction>1 0 0</direction>
+        <attenuation>
+          <range>50</range>
+          <linear>0.1</linear>
+          <constant>1.0</constant>
+          <quadratic>0.01</quadratic>
+        </attenuation>
+        <spot>
+          <inner_angle>2.0</inner_angle>
+          <outer_angle>3.0</outer_angle>
+          <falloff>0.8</falloff>
+        </spot>
+        <cast_shadows>false</cast_shadows>
+      </light>
+      <light type="spot" name="upstairs_3">
+        <pose>-14.8 10.7 17.4 0 0 0</pose>
+        <diffuse>0.5 0.5 0.5 1</diffuse>
+        <specular>0.5 0.5 0.5 1</specular>
+        <direction>1 0 0</direction>
+        <attenuation>
+          <range>50</range>
+          <linear>0.1</linear>
+          <constant>1.0</constant>
+          <quadratic>0.01</quadratic>
+        </attenuation>
+        <spot>
+          <inner_angle>2.0</inner_angle>
+          <outer_angle>3.0</outer_angle>
+          <falloff>0.8</falloff>
+        </spot>
+        <cast_shadows>false</cast_shadows>
+      </light>
+    </link>
+  </model>
+</sdf>

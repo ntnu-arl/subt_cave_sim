@@ -1,0 +1,73 @@
+<?xml version='1.0'?>
+<sdf version='1.7'>
+  <model name='unit_box_2'>
+    <link name='link'>
+      <inertial>
+        <mass>5.0</mass>
+        <inertia>
+          <ixx>1.166667</ixx>
+          <iyy>1.166667</iyy>
+          <izz>1.166667</izz>
+        </inertia>
+        <pose>0 0 0 0 0 0</pose>
+      </inertial>
+
+      <self_collide>false</self_collide>
+      <enable_wind>false</enable_wind>
+      <kinematic>false</kinematic>
+      <pose>0 0 0 0 -0 0</pose>
+      <gravity>true</gravity>
+
+      <!-- Visual representation -->
+      <visual name='visual'>
+        <geometry>
+          <box>
+            <size>42 25 9.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Grey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+        <pose>0 0 0 0 0 0</pose>
+      </visual>
+
+      <!-- Collision shape matching the visual box -->
+      <collision name='collision'>
+        <laser_retro>1.0</laser_retro>  <!-- Higher value to enhance detection -->
+        <geometry>
+          <box>
+            <size>42 25 5.5</size>
+          </box>
+        </geometry>
+        <pose>0 0 0 0 0 0</pose>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.5</mu>
+              <mu2>1.5</mu2>
+            </ode>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0.0</restitution_coefficient>
+            <threshold>1e+06</threshold>
+          </bounce>
+          <contact>
+            <ode>
+              <soft_cfm>0.0</soft_cfm>
+              <soft_erp>0.4</soft_erp>  <!-- Better edge compliance -->
+              <kp>1e+07</kp>  <!-- High stiffness to prevent penetration -->
+              <kd>10.0</kd>  <!-- Damping to stabilize corner contact -->
+              <max_vel>0.01</max_vel>
+              <min_depth>0.01</min_depth>  <!-- Minimum collision depth to prevent passing through -->
+            </ode>
+          </contact>
+        </surface>
+      </collision>
+    </link>
+    <static>1</static>
+    <allow_auto_disable>1</allow_auto_disable>
+  </model>
+</sdf>

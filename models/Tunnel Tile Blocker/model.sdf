@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="tunnel_tile_blocker">
+    <static>true</static>
+    <link name="link">
+      <pose>0 0 0 0 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>meshes/tunnel_tile_blocker.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/tunnel_tile_blocker.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>https://fuel.ignitionrobotics.org/1.0/openrobotics/models/tunnel tile 1/tip/files/materials/textures/ConstrainedWall_Albedo.jpg</albedo_map>
+              <normal_map>https://fuel.ignitionrobotics.org/1.0/openrobotics/models/tunnel tile 1/tip/files/materials/textures/ConstrainedWall_Normal.jpg</normal_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

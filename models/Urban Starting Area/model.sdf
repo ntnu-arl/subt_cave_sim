@@ -1,0 +1,252 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="urban_starting_area">
+    <static>true</static>
+    <link name="base">
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>meshes/starting_area.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual_floor">
+        <geometry>
+          <mesh>
+            <uri>meshes/starting_area.dae</uri>
+            <submesh>
+              <name>Floor</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/Floor_Albedo.jpg</albedo_map>
+              <normal_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/Floor_Normal.jpg</normal_map>
+              <roughness_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/Floor_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+              <uri>materials/scripts</uri>
+              <uri>materials/textures</uri>
+              <name>Urban/Floor_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name="visual_metal_brushed">
+        <geometry>
+          <mesh>
+            <uri>meshes/starting_area.dae</uri>
+            <submesh>
+              <name>MetalBrushed</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/MetalBrushed_Albedo.jpg</albedo_map>
+              <normal_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/MetalBrushed_Normal.jpg</normal_map>
+              <roughness_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/MetalBrushed_Roughness.jpg</roughness_map>
+              <metalness_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/MetalBrushed_Metalness.jpg</metalness_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+              <uri>materials/scripts</uri>
+              <uri>materials/textures</uri>
+              <name>Urban/MetalBrushed_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name="visual_concrete_tiles">
+        <geometry>
+          <mesh>
+            <uri>meshes/starting_area.dae</uri>
+            <submesh>
+              <name>ConcreteTiles</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/ConcreteTiles_Albedo.jpg</albedo_map>
+              <normal_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/ConcreteTiles_Normal.jpg</normal_map>
+              <roughness_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/ConcreteTiles_Roughness.jpg</roughness_map>
+              <metalness_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/ConcreteTiles_Metalness.jpg</metalness_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+              <uri>materials/scripts</uri>
+              <uri>materials/textures</uri>
+              <name>Urban/ConcreteTiles_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+
+       <visual name="visual_lights">
+        <geometry>
+          <mesh>
+            <uri>meshes/starting_area.dae</uri>
+            <submesh>
+              <name>Lights</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/Lights_Albedo.jpg</albedo_map>
+              <normal_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/Lights_Normal.jpg</normal_map>
+              <roughness_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/Lights_Roughness.jpg</roughness_map>
+              <metalness_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/Lights_Metalness.jpg</metalness_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+              <uri>materials/scripts</uri>
+              <uri>materials/textures</uri>
+              <name>Urban/Lights_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name="visual_wall">
+        <geometry>
+          <mesh>
+            <uri>meshes/starting_area.dae</uri>
+            <submesh>
+              <name>Wall</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/Wall_Albedo.jpg</albedo_map>
+              <normal_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/Wall_Normal.jpg</normal_map>
+              <roughness_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/Wall_Roughness.jpg</roughness_map>
+              <metalness_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/Wall_Metalness.jpg</metalness_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+              <uri>materials/scripts</uri>
+              <uri>materials/textures</uri>
+              <name>Urban/Wall_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+
+    </link>
+        <!--Uncomment <link> to preview detector region>-->
+          <!--<link name='body'>
+            <pose>5 27 12.5 0 0 0</pose>
+            <visual name="v1">
+              <transparency>0.5</transparency>
+              <geometry>
+                <box>
+                  <size>24 24 10</size>
+              </box>
+            </geometry>
+            </visual>
+            <material>
+              <ambient>0.0 1.0 0.0 1</ambient>
+              <diffuse>0.0 1.0 0.0 1</diffuse>
+              <specular>0.5 0.5 0.5 1</specular>
+            </material>
+            <cast_shadows>false</cast_shadows>
+          </link>-->
+          <plugin filename="libignition-gazebo-performer-detector-system.so" name="ignition::gazebo::systems::PerformerDetector">
+            <topic>/subt_performer_detector</topic>
+            <pose>-13.75 0 15 0 0 0</pose>
+            <geometry>
+              <box>
+                <size>51.5 60 30</size>
+              </box>
+            </geometry>
+          </plugin>
+
+    <!--Uncomment <link> to preview detector region-->
+      <!--<link name='body5'>
+        <visual name="v1">
+          <pose>-25 24 5 0 0 0</pose>
+          <transparency>0.2</transparency>
+          <geometry>
+            <box>
+              <size>10 37 10</size>
+            </box>
+          </geometry>
+          <material>
+            <diffuse>0.0 1.0 0.0 1</diffuse>
+          </material>
+        </visual>
+        <cast_shadows>false</cast_shadows>
+      </link>-->
+      <plugin filename="libignition-gazebo-performer-detector-system.so" name="ignition::gazebo::systems::PerformerDetector">
+        <topic>/subt_performer_detector</topic>
+        <pose>-25 24 5 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>10 37 10</size>
+          </box>
+        </geometry>
+        <header_data>
+          <key>type</key>
+          <value>elevation</value>
+        </header_data>
+      </plugin>
+
+    <!--Uncomment <link> to preview detector region-->
+      <!--<link name='body6'>
+        <visual name="v1">
+          <pose>-6 45 8 0 0 0</pose>
+          <transparency>0.2</transparency>
+          <geometry>
+            <box>
+              <size>20 10 9</size>
+            </box>
+          </geometry>
+          <material>
+            <diffuse>0.0 1.0 0.0 1</diffuse>
+          </material>
+        </visual>
+        <cast_shadows>false</cast_shadows>
+      </link>-->
+      <plugin filename="libignition-gazebo-performer-detector-system.so" name="ignition::gazebo::systems::PerformerDetector">
+        <topic>/subt_performer_detector</topic>
+        <pose>-6 45 8 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>20 10 9</size>
+          </box>
+        </geometry>
+        <header_data>
+          <key>type</key>
+          <value>elevation</value>
+        </header_data>
+      </plugin>
+
+  </model>
+</sdf>

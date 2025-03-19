@@ -1,0 +1,274 @@
+
+material UrbanTile/Wall_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Wall_Albedo.jpg
+        }
+      }
+    }
+  }
+material UrbanTile/ConcreteTiles_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture ConcreteTiles_Albedo.jpg
+        }
+      }
+    }
+  }
+material UrbanTile/PlasticCrate_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture PlasticCrate_Albedo.jpg
+        }
+      }
+    }
+  }
+material UrbanTile/Metal_Gray_Rusty_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Metal_Gray_Rusty_Albedo.jpg
+        }
+      }
+    }
+  }
+material UrbanTile/PalletWood_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture PalletWood_Albedo.jpg
+        }
+      }
+    }
+  }
+material UrbanTile/Floor_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Floor_Albedo.jpg
+        }
+      }
+    }
+  }
+material UrbanTile/TubeLight_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture TubeLight_Albedo.jpg
+        }
+      }
+    }
+  }
+material UrbanTile/Pipes_Orange_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Pipes_Orange_Albedo.jpg
+        }
+      }
+    }
+  }
+material UrbanTile/Pipes_Blue_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Pipes_Blue_Albedo.jpg
+        }
+      }
+    }
+  }
+material UrbanTile/Metal_Rusty_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Metal_Rusty_Albedo.jpg
+        }
+      }
+    }
+  }
+material UrbanTile/Plastic_Bumpy_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Plastic_Bumpy_Albedo.jpg
+        }
+      }
+    }
+  }
+material UrbanTile/Metal_Chrome_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Metal_Chrome_Albedo.jpg
+        }
+      }
+    }
+  }
+material UrbanTile/PipeTank_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture PipeTank_Albedo.jpg
+        }
+      }
+    }
+  }
+material UrbanTile/RubblePile_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture RubblePile_Albedo.jpg
+        }
+      }
+    }
+  }
+material UrbanTile/WallPanels_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture WallPanels_Albedo.jpg
+        }
+      }
+    }
+  }
+material UrbanTile/Concrete_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Concrete_Albedo.jpg
+        }
+      }
+    }
+  }
+material UrbanTile/FloorConcrete_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture FloorConcrete_Albedo.jpg
+        }
+      }
+    }
+  }
+material UrbanTile/Ladder_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Ladder_Albedo.jpg
+        }
+      }
+    }
+  }
+material UrbanTile/OilDrum02_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture OilDrum02_Albedo.jpg
+        }
+      }
+    }
+  }
+material UrbanTile/OilDrum01_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture OilDrum01_Albedo.jpg
+        }
+      }
+    }
+  }
+material UrbanTile/OilDrum03_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture OilDrum03_Albedo.jpg
+        }
+      }
+    }
+  }

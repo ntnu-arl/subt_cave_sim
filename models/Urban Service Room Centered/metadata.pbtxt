@@ -1,0 +1,24 @@
+model {
+  file: "model.sdf"
+  file_format {
+    version {
+      major: 1
+      minor: 6
+    }
+    name: "sdf"
+  }
+}
+name: "Urban Service Room Centered"
+description: "A service room with its entrance centered to connect to other urban tiles."
+authors {
+  name: "Cole Biesemeyer"
+  email: "cole@openrobotics.org"
+}
+authors {
+  name: "Ian ChenBiesemeyer"
+  email: "cole@openrobotics.org"
+}
+dependencies {
+  uri: "https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform"
+}
+

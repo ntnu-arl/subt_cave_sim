@@ -1,0 +1,240 @@
+material Urban/Floor_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Floor_Albedo.jpg
+      }
+    }
+  }
+}
+
+material Urban/TileFloor_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Floor_Albedo.jpg
+      }
+    }
+  }
+}
+
+
+
+material Urban/MetalBrushed_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture MetalBrushed_Albedo.jpg
+      }
+    }
+  }
+}
+
+material Urban/ConcreteTiles_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture ConcreteTiles_Albedo.jpg
+      }
+    }
+  }
+}
+
+material Urban/Window_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Window_Albedo.jpg
+      }
+    }
+  }
+}
+
+material Urban/Wall_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Wall_Albedo.jpg
+      }
+    }
+  }
+}
+
+material Urban/Stairs_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Stairs_Albedo.jpg
+      }
+    }
+  }
+}
+
+material Urban/Concrete_Tunnel_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Concrete_Tunnel_Albedo.jpg
+      }
+    }
+  }
+}
+
+material Urban/Shaft_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Shaft_Albedo.jpg
+      }
+    }
+  }
+}
+
+
+material Urban/Railing_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Railing.jpg
+      }
+    }
+  }
+}
+
+material Urban/PaintedMetal_Blue_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture PaintedMetal_Blue_Albedo.jpg
+      }
+    }
+  }
+}
+
+material Urban/AprilTag_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture AprilTags.jpg
+      }
+    }
+  }
+}
+
+material Urban/Rail_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Rail_Albedo.jpg
+      }
+    }
+  }
+}
+
+material Urban/ThirdRail_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture ThirdRail_Albedo.jpg
+      }
+    }
+  }
+}
+
+material Urban/PaintedMetal_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture PaintedMetal_Albedo.jpg
+      }
+    }
+  }
+}
+
+material Urban/Light_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Light_Albedo.jpg
+      }
+    }
+  }
+}
+
+material Urban/Lights_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Lights_Albedo.jpg
+      }
+    }
+  }
+}
