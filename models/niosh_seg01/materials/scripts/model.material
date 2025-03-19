@@ -1,0 +1,209 @@
+
+material TunnelTile/WallRockyPlaster_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture WallRockyPlaster_Albedo.jpg
+        }
+      }
+    }
+  }
+material TunnelTile/WallPlaster_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture WallPlaster_Albedo.jpg
+        }
+      }
+    }
+  }
+material TunnelTile/DirtPath_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture DirtPath_Albedo.jpg
+        }
+      }
+    }
+  }
+material TunnelTile/WallRockyLayered_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture WallRockyLayered_Albedo.jpg
+        }
+      }
+    }
+  }
+material TunnelTile/MetalBeam_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture MetalBeam_Albedo.jpg
+        }
+      }
+    }
+  }
+material TunnelTile/GroundMud_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture GroundMud_Albedo.jpg
+        }
+      }
+    }
+  }
+material TunnelTile/CeilingGrid_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture CeilingGrid_Albedo.jpg
+        }
+      }
+    }
+  }
+material TunnelTile/WallRocky_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture WallRocky_Albedo.jpg
+        }
+      }
+    }
+  }
+material TunnelTile/GroundDirt_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture GroundDirt_Albedo.jpg
+        }
+      }
+    }
+  }
+material TunnelTile/CeilingRocky_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture CeilingRocky_Albedo.jpg
+        }
+      }
+    }
+  }
+material TunnelTile/PlasterRough_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture PlasterRough_Albedo.jpg
+        }
+      }
+    }
+  }
+material TunnelTile/WoodBeamRound_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture WoodBeamRound_Albedo.jpg
+        }
+      }
+    }
+  }
+material TunnelTile/GroundRocky_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture GroundRocky_Albedo.jpg
+        }
+      }
+    }
+  }
+material TunnelTile/MeshPlate_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture MeshPlate_Albedo.jpg
+        }
+      }
+    }
+  }
+material TunnelTile/WoodBeamShort_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture WoodBeamShort_Albedo.jpg
+        }
+      }
+    }
+  }
+material TunnelTile/WallBrick01_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture WallBrick01_Albedo.jpg
+        }
+      }
+    }
+  }

@@ -1,0 +1,469 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="niosh_seg01">
+    <static>true</static>
+    <link name="base_link">
+      <collision name="collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://niosh_seg01/meshes/nioshseg01.dae</uri>
+            <scale>1.0 1.0 1.0</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name= "WallRockyPlaster_visual">
+        <geometry>
+          <mesh>
+            <uri>model://niosh_seg01/meshes/nioshseg01.dae</uri>
+            <submesh>
+              <name>WallRockyPlaster</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://niosh_seg01/materials/textures/WallRockyPlaster_Albedo.jpg</albedo_map>
+              <normal_map>model://niosh_seg01/materials/textures/WallRockyPlaster_Normal.jpg</normal_map>
+              <roughness_map>model://niosh_seg01/materials/textures/WallRockyPlaster_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>model://niosh_seg01/materials/scripts/</uri>
+            <uri>model://niosh_seg01/materials/textures/</uri>
+            <name>TunnelTile/WallRockyPlaster_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "WallPlaster_visual">
+        <geometry>
+          <mesh>
+            <uri>model://niosh_seg01/meshes/nioshseg01.dae</uri>
+            <submesh>
+              <name>WallPlaster</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://niosh_seg01/materials/textures/WallPlaster_Albedo.jpg</albedo_map>
+              <normal_map>model://niosh_seg01/materials/textures/WallPlaster_Normal.jpg</normal_map>
+              <roughness_map>model://niosh_seg01/materials/textures/WallPlaster_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>model://niosh_seg01/materials/scripts/</uri>
+            <uri>model://niosh_seg01/materials/textures/</uri>
+            <name>TunnelTile/WallPlaster_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "DirtPath_visual">
+        <geometry>
+          <mesh>
+            <uri>model://niosh_seg01/meshes/nioshseg01.dae</uri>
+            <submesh>
+              <name>DirtPath</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://niosh_seg01/materials/textures/DirtPath_Albedo.jpg</albedo_map>
+              <normal_map>model://niosh_seg01/materials/textures/DirtPath_Normal.jpg</normal_map>
+              <roughness_map>model://niosh_seg01/materials/textures/DirtPath_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>model://niosh_seg01/materials/scripts/</uri>
+            <uri>model://niosh_seg01/materials/textures/</uri>
+            <name>TunnelTile/DirtPath_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "WallRockyLayered_visual">
+        <geometry>
+          <mesh>
+            <uri>model://niosh_seg01/meshes/nioshseg01.dae</uri>
+            <submesh>
+              <name>WallRockyLayered</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://niosh_seg01/materials/textures/WallRockyLayered_Albedo.jpg</albedo_map>
+              <normal_map>model://niosh_seg01/materials/textures/WallRockyLayered_Normal.jpg</normal_map>
+              <metal_map>model://niosh_seg01/materials/textures/WallRockyLayered_Roughness.jpg</metal_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>model://niosh_seg01/materials/scripts/</uri>
+            <uri>model://niosh_seg01/materials/textures/</uri>
+            <name>TunnelTile/WallRockyLayered_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "MetalBeam_visual">
+        <geometry>
+          <mesh>
+            <uri>model://niosh_seg01/meshes/nioshseg01.dae</uri>
+            <submesh>
+              <name>MetalBeam</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://niosh_seg01/materials/textures/MetalBeam_Albedo.jpg</albedo_map>
+              <normal_map>model://niosh_seg01/materials/textures/MetalBeam_Normal.jpg</normal_map>
+              <metal_map>model://niosh_seg01/materials/textures/MetalBeam_Metalness.jpg</metal_map>
+              <roughness_map>model://niosh_seg01/materials/textures/MetalBeam_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>model://niosh_seg01/materials/scripts/</uri>
+            <uri>model://niosh_seg01/materials/textures/</uri>
+            <name>TunnelTile/MetalBeam_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "GroundMud_visual">
+        <geometry>
+          <mesh>
+            <uri>model://niosh_seg01/meshes/nioshseg01.dae</uri>
+            <submesh>
+              <name>GroundMud</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://niosh_seg01/materials/textures/GroundMud_Albedo.jpg</albedo_map>
+              <normal_map>model://niosh_seg01/materials/textures/GroundMud_Normal.jpg</normal_map>
+              <roughness_map>model://niosh_seg01/materials/textures/GroundMud_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>model://niosh_seg01/materials/scripts/</uri>
+            <uri>model://niosh_seg01/materials/textures/</uri>
+            <name>TunnelTile/GroundMud_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "CeilingGrid_visual">
+        <geometry>
+          <mesh>
+            <uri>model://niosh_seg01/meshes/nioshseg01.dae</uri>
+            <submesh>
+              <name>CeilingGrid</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://niosh_seg01/materials/textures/CeilingGrid_Albedo.jpg</albedo_map>
+              <normal_map>model://niosh_seg01/materials/textures/CeilingGrid_Normal.jpg</normal_map>
+              <roughness_map>model://niosh_seg01/materials/textures/CeilingGrid_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>model://niosh_seg01/materials/scripts/</uri>
+            <uri>model://niosh_seg01/materials/textures/</uri>
+            <name>TunnelTile/CeilingGrid_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "WallRocky_visual">
+        <geometry>
+          <mesh>
+            <uri>model://niosh_seg01/meshes/nioshseg01.dae</uri>
+            <submesh>
+              <name>WallRocky</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://niosh_seg01/materials/textures/WallRocky_Albedo.jpg</albedo_map>
+              <normal_map>model://niosh_seg01/materials/textures/WallRocky_Normal.jpg</normal_map>
+              <roughness_map>model://niosh_seg01/materials/textures/WallRocky_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>model://niosh_seg01/materials/scripts/</uri>
+            <uri>model://niosh_seg01/materials/textures/</uri>
+            <name>TunnelTile/WallRocky_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "GroundDirt_visual">
+        <geometry>
+          <mesh>
+            <uri>model://niosh_seg01/meshes/nioshseg01.dae</uri>
+            <submesh>
+              <name>GroundDirt</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://niosh_seg01/materials/textures/GroundDirt_Albedo.jpg</albedo_map>
+              <normal_map>model://niosh_seg01/materials/textures/GroundDirt_Normal.jpg</normal_map>
+              <roughness_map>model://niosh_seg01/materials/textures/GroundDirt_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>model://niosh_seg01/materials/scripts/</uri>
+            <uri>model://niosh_seg01/materials/textures/</uri>
+            <name>TunnelTile/GroundDirt_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "CeilingRocky_visual">
+        <geometry>
+          <mesh>
+            <uri>model://niosh_seg01/meshes/nioshseg01.dae</uri>
+            <submesh>
+              <name>CeilingRocky</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://niosh_seg01/materials/textures/CeilingRocky_Albedo.jpg</albedo_map>
+              <normal_map>model://niosh_seg01/materials/textures/CeilingRocky_Normal.jpg</normal_map>
+              <roughness_map>model://niosh_seg01/materials/textures/CeilingRocky_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>model://niosh_seg01/materials/scripts/</uri>
+            <uri>model://niosh_seg01/materials/textures/</uri>
+            <name>TunnelTile/CeilingRocky_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "PlasterRough_visual">
+        <geometry>
+          <mesh>
+            <uri>model://niosh_seg01/meshes/nioshseg01.dae</uri>
+            <submesh>
+              <name>PlasterRough</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://niosh_seg01/materials/textures/PlasterRough_Albedo.jpg</albedo_map>
+              <normal_map>model://niosh_seg01/materials/textures/PlasterRough_Normal.jpg</normal_map>
+              <roughness_map>model://niosh_seg01/materials/textures/PlasterRough_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>model://niosh_seg01/materials/scripts/</uri>
+            <uri>model://niosh_seg01/materials/textures/</uri>
+            <name>TunnelTile/PlasterRough_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "WoodBeamRound_visual">
+        <geometry>
+          <mesh>
+            <uri>model://niosh_seg01/meshes/nioshseg01.dae</uri>
+            <submesh>
+              <name>WoodBeamRound</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://niosh_seg01/materials/textures/WoodBeamRound_Albedo.jpg</albedo_map>
+              <normal_map>model://niosh_seg01/materials/textures/WoodBeamRound_Normal.jpg</normal_map>
+              <roughness_map>model://niosh_seg01/materials/textures/WoodBeamRound_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>model://niosh_seg01/materials/scripts/</uri>
+            <uri>model://niosh_seg01/materials/textures/</uri>
+            <name>TunnelTile/WoodBeamRound_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "GroundRocky_visual">
+        <geometry>
+          <mesh>
+            <uri>model://niosh_seg01/meshes/nioshseg01.dae</uri>
+            <submesh>
+              <name>GroundRocky</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://niosh_seg01/materials/textures/GroundRocky_Albedo.jpg</albedo_map>
+              <normal_map>model://niosh_seg01/materials/textures/GroundRocky_Normal.jpg</normal_map>
+              <roughness_map>model://niosh_seg01/materials/textures/GroundRocky_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>model://niosh_seg01/materials/scripts/</uri>
+            <uri>model://niosh_seg01/materials/textures/</uri>
+            <name>TunnelTile/GroundRocky_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "MeshPlate_visual">
+        <geometry>
+          <mesh>
+            <uri>model://niosh_seg01/meshes/nioshseg01.dae</uri>
+            <submesh>
+              <name>MeshPlate</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://niosh_seg01/materials/textures/MeshPlate_Albedo.jpg</albedo_map>
+              <normal_map>model://niosh_seg01/materials/textures/MeshPlate_Normal.jpg</normal_map>
+              <metal_map>model://niosh_seg01/materials/textures/MeshPlate_Metalness.jpg</metal_map>
+              <roughness_map>model://niosh_seg01/materials/textures/MeshPlate_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>model://niosh_seg01/materials/scripts/</uri>
+            <uri>model://niosh_seg01/materials/textures/</uri>
+            <name>TunnelTile/MeshPlate_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "WoodBeamShort_visual">
+        <geometry>
+          <mesh>
+            <uri>model://niosh_seg01/meshes/nioshseg01.dae</uri>
+            <submesh>
+              <name>WoodBeamShort</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://niosh_seg01/materials/textures/WoodBeamShort_Albedo.jpg</albedo_map>
+              <normal_map>model://niosh_seg01/materials/textures/WoodBeamShort_Normal.jpg</normal_map>
+              <roughness_map>model://niosh_seg01/materials/textures/WoodBeamShort_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>model://niosh_seg01/materials/scripts/</uri>
+            <uri>model://niosh_seg01/materials/textures/</uri>
+            <name>TunnelTile/WoodBeamShort_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "WallBrick01_visual">
+        <geometry>
+          <mesh>
+            <uri>model://niosh_seg01/meshes/nioshseg01.dae</uri>
+            <submesh>
+              <name>WallBrick01</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://niosh_seg01/materials/textures/WallBrick01_Albedo.jpg</albedo_map>
+              <normal_map>model://niosh_seg01/materials/textures/WallBrick01_Normal.jpg</normal_map>
+              <roughness_map>model://niosh_seg01/materials/textures/WallBrick01_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>model://niosh_seg01/materials/scripts/</uri>
+            <uri>model://niosh_seg01/materials/textures/</uri>
+            <name>TunnelTile/WallBrick01_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+
+
+    </link>
+  </model>
+</sdf>
