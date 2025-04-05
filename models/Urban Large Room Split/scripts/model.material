@@ -1,0 +1,196 @@
+
+material UrbanTile/BrickWall_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture BrickWall_Albedo.jpg
+        }
+      }
+    }
+  }
+material UrbanTile/FloorConcrete_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture FloorConcrete_Albedo.jpg
+        }
+      }
+    }
+  }
+material UrbanTile/WallLower_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture WallLower_Albedo.jpg
+        }
+      }
+    }
+  }
+material UrbanTile/Beam_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Beam_Albedo.jpg
+        }
+      }
+    }
+  }
+material UrbanTile/BeamGray_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture BeamGray_Albedo.jpg
+        }
+      }
+    }
+  }
+material UrbanTile/Metal_Rusty_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Metal_Rusty_Albedo.jpg
+        }
+      }
+    }
+  }
+material UrbanTile/Chair_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Chair_Albedo.jpg
+        }
+      }
+    }
+  }
+material UrbanTile/ColumnH_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture ColumnH_Albedo.jpg
+        }
+      }
+    }
+  }
+material UrbanTile/LightDome_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture LightDome_Albedo.jpg
+        }
+      }
+    }
+  }
+material UrbanTile/WallPanels_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture WallPanels_Albedo.jpg
+        }
+      }
+    }
+  }
+material UrbanTile/CorrugatedRoof_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture CorrugatedRoof_Albedo.jpg
+        }
+      }
+    }
+  }
+material UrbanTile/RubblePile_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture RubblePile_Albedo.jpg
+        }
+      }
+    }
+  }
+material UrbanTile/Table_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Table_Albedo.jpg
+        }
+      }
+    }
+  }
+material UrbanTile/Trashcan55_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Trashcan55_Albedo.jpg
+        }
+      }
+    }
+  }
+material UrbanTile/Trashcan55Bag_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Trashcan55Bag_Albedo.jpg
+        }
+      }
+    }
+  }

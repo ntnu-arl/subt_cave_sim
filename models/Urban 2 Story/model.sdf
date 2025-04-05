@@ -12,7 +12,16 @@
           </mesh>
         </geometry>
       </collision>
-      <visual name="CorrugatedRoof_visual">
+      <visual name="visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>meshes/2story.dae</uri>
+            <scale>1.0 1.0 1.0</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <!-- <visual name="CorrugatedRoof_visual">
         <geometry>
           <mesh>
             <uri>meshes/2story.dae</uri>
@@ -33,7 +42,6 @@
               <roughness_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/CorrugatedRoof_Roughness.jpg</roughness_map>
             </metal>
           </pbr>
-          <!-- fallback to script if no PBR support-->
           <script>
             <uri>materials/scripts/</uri>
             <uri>materials/textures/</uri>
@@ -62,7 +70,6 @@
               <roughness_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/DumpsterLarge_Roughtness.jpg</roughness_map>
             </metal>
           </pbr>
-          <!-- fallback to script if no PBR support-->
           <script>
             <uri>materials/scripts/</uri>
             <uri>materials/textures/</uri>
@@ -91,7 +98,6 @@
               <roughness_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/Generator_Roughness.jpg</roughness_map>
             </metal>
           </pbr>
-          <!-- fallback to script if no PBR support-->
           <script>
             <uri>materials/scripts/</uri>
             <uri>materials/textures/</uri>
@@ -120,7 +126,6 @@
               <roughness_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/Beam_Roughness.jpg</roughness_map>
             </metal>
           </pbr>
-          <!-- fallback to script if no PBR support-->
           <script>
             <uri>materials/scripts/</uri>
             <uri>materials/textures/</uri>
@@ -149,7 +154,6 @@
               <roughness_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/BeamGray_Roughness.jpg</roughness_map>
             </metal>
           </pbr>
-          <!-- fallback to script if no PBR support-->
           <script>
             <uri>materials/scripts/</uri>
             <uri>materials/textures/</uri>
@@ -178,7 +182,6 @@
               <roughness_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/Metal_Rusty_Roughness.jpg</roughness_map>
             </metal>
           </pbr>
-          <!-- fallback to script if no PBR support-->
           <script>
             <uri>materials/scripts/</uri>
             <uri>materials/textures/</uri>
@@ -207,7 +210,6 @@
               <roughness_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/Chair_Roughness.jpg</roughness_map>
             </metal>
           </pbr>
-          <!-- fallback to script if no PBR support-->
           <script>
             <uri>materials/scripts/</uri>
             <uri>materials/textures/</uri>
@@ -236,7 +238,6 @@
               <roughness_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/ColumnH_Roughness.jpg</roughness_map>
             </metal>
           </pbr>
-          <!-- fallback to script if no PBR support-->
           <script>
             <uri>materials/scripts/</uri>
             <uri>materials/textures/</uri>
@@ -265,7 +266,6 @@
               <roughness_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/LightDome_Roughness.jpg</roughness_map>
             </metal>
           </pbr>
-          <!-- fallback to script if no PBR support-->
           <script>
             <uri>materials/scripts/</uri>
             <uri>materials/textures/</uri>
@@ -294,7 +294,6 @@
               <roughness_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/WallPanels_Roughness.jpg</roughness_map>
             </metal>
           </pbr>
-          <!-- fallback to script if no PBR support-->
           <script>
             <uri>materials/scripts/</uri>
             <uri>materials/textures/</uri>
@@ -322,7 +321,6 @@
               <roughness_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/CableSpool_Roughtness.jpg</roughness_map>
             </metal>
           </pbr>
-          <!-- fallback to script if no PBR support-->
           <script>
             <uri>materials/scripts/</uri>
             <uri>materials/textures/</uri>
@@ -350,7 +348,6 @@
               <roughness_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/RubblePile_Roughness.jpg</roughness_map>
             </metal>
           </pbr>
-          <!-- fallback to script if no PBR support-->
           <script>
             <uri>materials/scripts/</uri>
             <uri>materials/textures/</uri>
@@ -379,7 +376,6 @@
               <roughness_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/Table_Roughness.jpg</roughness_map>
             </metal>
           </pbr>
-          <!-- fallback to script if no PBR support-->
           <script>
             <uri>materials/scripts/</uri>
             <uri>materials/textures/</uri>
@@ -407,7 +403,6 @@
               <roughness_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/Trashcan55_Roughness.jpg</roughness_map>
             </metal>
           </pbr>
-          <!-- fallback to script if no PBR support-->
           <script>
             <uri>materials/scripts/</uri>
             <uri>materials/textures/</uri>
@@ -435,7 +430,6 @@
               <roughness_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/Trashcan55Bag_Roughness.jpg</roughness_map>
             </metal>
           </pbr>
-          <!-- fallback to script if no PBR support-->
           <script>
             <uri>materials/scripts/</uri>
             <uri>materials/textures/</uri>
@@ -464,7 +458,6 @@
               <roughness_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/StairsMetal_Roughness.jpg</roughness_map>
             </metal>
           </pbr>
-          <!-- fallback to script if no PBR support-->
           <script>
             <uri>materials/scripts/</uri>
             <uri>materials/textures/</uri>
@@ -493,7 +486,6 @@
               <roughness_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/GeneratorPlatform_Roughness.jpg</roughness_map>
             </metal>
           </pbr>
-          <!-- fallback to script if no PBR support-->
           <script>
             <uri>materials/scripts/</uri>
             <uri>materials/textures/</uri>
@@ -521,7 +513,6 @@
               <roughness_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/FloorConcrete_Roughness.jpg</roughness_map>
             </metal>
           </pbr>
-          <!-- fallback to script if no PBR support-->
           <script>
             <uri>materials/scripts/</uri>
             <uri>materials/textures/</uri>
@@ -550,7 +541,6 @@
               <roughness_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/BrickWall_Roughness.jpg</roughness_map>
             </metal>
           </pbr>
-          <!-- fallback to script if no PBR support-->
           <script>
             <uri>materials/scripts/</uri>
             <uri>materials/textures/</uri>
@@ -578,14 +568,13 @@
               <roughness_map>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Platform/tip/files/materials/textures/WallLower_Roughness.jpg</roughness_map>
             </metal>
           </pbr>
-          <!-- fallback to script if no PBR support-->
           <script>
             <uri>materials/scripts/</uri>
             <uri>materials/textures/</uri>
             <name>UrbanTile/WallLower_Diffuse</name>
           </script>
         </material>
-      </visual>
+      </visual> -->
     </link>
 
       <!--Uncomment <link> to preview detector region-->

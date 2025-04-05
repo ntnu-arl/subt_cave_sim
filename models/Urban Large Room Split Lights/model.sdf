@@ -4,7 +4,7 @@
     <static>true</static>
     <include>
       <name>urban_large_room_split</name>
-      <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Urban Large Room Split</uri>
+      <uri>model://Urban Large Room Split</uri>
     </include>
 
     <link name="lights">
