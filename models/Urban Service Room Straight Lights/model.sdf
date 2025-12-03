@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <sdf version="1.6">
-    <model name="urban_service_room_straight_lights">
+    <model name="Urban Service Room Straight Lights">
         <static>true</static>
         <include>
             <static>true</static>

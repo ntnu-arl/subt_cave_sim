@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <sdf version="1.6">
-  <model name="urban_service_room_straight">
+  <model name="Urban Service Room Straight">
     <static>true</static>
     <link name="base_link">
       <collision name="collision">

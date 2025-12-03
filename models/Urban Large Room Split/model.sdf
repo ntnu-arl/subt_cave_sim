@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <sdf version="1.6">
-    <model name="urban_large_room_split">
+    <model name="Urban Large Room Split">
         <static>true</static>
         <link name="base_link">
             <collision name="collision">

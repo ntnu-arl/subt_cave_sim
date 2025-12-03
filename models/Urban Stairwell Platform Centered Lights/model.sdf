@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <sdf version="1.6">
-    <model name="urban_stairwell_platform_centered_lights">
+    <model name="Urban Stairwell Platform Centered Lights">
         <static>true</static>
         <include>
             <static>true</static>

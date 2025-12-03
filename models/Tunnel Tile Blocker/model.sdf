@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <sdf version="1.6">
-  <model name="tunnel_tile_blocker">
+  <model name="Tunnel Tile Blocker">
     <static>true</static>
     <link name="link">
       <pose>0 0 0 0 0 0</pose>

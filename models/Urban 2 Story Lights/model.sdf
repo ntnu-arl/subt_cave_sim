@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <sdf version="1.6">
-  <model name="urban_2story_lights">
+  <model name="Urban 2 Story Lights">
     <static>true</static>
     <include>
       <name>urban_2story</name>

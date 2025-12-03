@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <sdf version="1.6">
-  <model name="urban_large_room_split_lights">
+  <model name="Urban Large Room Split Lights">
     <static>true</static>
     <include>
       <name>urban_large_room_split</name>

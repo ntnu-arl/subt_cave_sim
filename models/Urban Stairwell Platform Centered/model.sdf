@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <sdf version="1.6">
-    <model name="urban_stairwell_platform_centered">
+    <model name="Urban Stairwell Platform Centered">
         <static>true</static>
         <link name="base">
             <pose>0 0 -1.70 0 0 0</pose>
