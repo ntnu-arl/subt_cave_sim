@@ -148,8 +148,8 @@
         <enable_wind>0</enable_wind>
       </link>
     </model>
-     <!-- <model name='pittsburgh_mine2'>
-      <pose frame=''>-22 92.5 0 0 -0 0</pose>
+     <model name='pittsburgh_mine2'>
+      <pose frame=''>-22 92.5 2 0 -0 0</pose>
       <static>1</static>
       <link name='link'>
         <collision name='collision'>
@@ -183,7 +183,7 @@
         <kinematic>0</kinematic>
         <enable_wind>0</enable_wind>
       </link>
-    </model> -->
+    </model>
     <!-- <model name='pittsburgh_mine2'>
       <pose frame=''>125 125 2.75 0 -0 0</pose>
       <static>1</static>
