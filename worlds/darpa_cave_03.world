@@ -4,7 +4,7 @@
     __main__.py simple_cave_03.tsv -\-graph-file simple_cave_03.dot -\-world-file simple_cave_03.sdf -\-world-name simple_cave_03 -\-scale_x 25 -\-scale_y 25 -\-cave -\-y0 25 -\-x0 0 -\-z0 0 -\-level_type row_col -\-levels_buf 5
 -->
 <sdf version="1.6">
-  <world name="simple_cave_03">
+  <world name="cosmos">
 
     <physics name="1ms" type="ode">
       <max_step_size>0.01</max_step_size>
@@ -13,13 +13,28 @@
     </physics>
 
     <scene>
-      <ambient>150 150 150 255 </ambient>
-      <background>250 250 250 255</background>
+      <ambient>0.588235 0.588235 0.588235 1</ambient>
+      <background>0.980392 0.980392 0.980392 1</background>
       <grid>true</grid>
       <origin_visual>true</origin_visual>
     </scene>
 
-    <plugin name='ros_interface_plugin' filename='librotors_gazebo_ros_interface_plugin.so'/>
+    <plugin filename="gz-sim-physics-system"
+        name="gz::sim::systems::Physics"/>
+
+    <plugin filename="gz-sim-user-commands-system"
+            name="gz::sim::systems::UserCommands"/>
+
+    <plugin filename="gz-sim-scene-broadcaster-system"
+            name="gz::sim::systems::SceneBroadcaster"/>
+
+    <plugin filename="gz-sim-imu-system"
+            name="gz::sim::systems::Imu"/>
+
+    <plugin filename="gz-sim-sensors-system"
+            name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
     
     <!-- The staging area -->
     <include>
