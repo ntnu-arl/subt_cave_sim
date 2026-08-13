@@ -579,7 +579,7 @@
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>/home/mihir/.ignition/fuel/fuel.ignitionrobotics.org/openrobotics/models/tunnel tile blocker/11/meshes/tunnel_tile_blocker.dae</uri>
+              <uri>model://Tunnel Tile Blocker/meshes/tunnel_tile_blocker.dae</uri>
             </mesh>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -599,7 +599,7 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>/home/mihir/.ignition/fuel/fuel.ignitionrobotics.org/openrobotics/models/tunnel tile blocker/11/meshes/tunnel_tile_blocker.dae</uri>
+              <uri>model://Tunnel Tile Blocker/meshes/tunnel_tile_blocker.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -626,7 +626,7 @@
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>/home/mihir/.ignition/fuel/fuel.ignitionrobotics.org/openrobotics/models/tunnel tile blocker/11/meshes/tunnel_tile_blocker.dae</uri>
+              <uri>model://Tunnel Tile Blocker/meshes/tunnel_tile_blocker.dae</uri>
             </mesh>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -646,7 +646,7 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>/home/mihir/.ignition/fuel/fuel.ignitionrobotics.org/openrobotics/models/tunnel tile blocker/11/meshes/tunnel_tile_blocker.dae</uri>
+              <uri>model://Tunnel Tile Blocker/meshes/tunnel_tile_blocker.dae</uri>
             </mesh>
           </geometry>
           <material>
